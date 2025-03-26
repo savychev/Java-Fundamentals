@@ -1,4 +1,4 @@
-package be.intecbrussel.les1.oefening4;
+package be.intecbrussel.les1.Oefening4;
 
 public class Oefening4_2 {
     public static void main(String[] args) {
