@@ -15,7 +15,7 @@ public class Oefening5_3 {
             System.out.print("Enter the number between 1 and 10: ");
             int numUser = scanner.nextInt();
 
-            if (numUser == 0) {
+            if (numUser == 0) { // to exit, enter 0
                 System.out.println("Bye...");
                 break;
             } else {
