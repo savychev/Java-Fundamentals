@@ -2,7 +2,7 @@ package be.intecbrussel.les2;
 
 import java.util.Random;
 
-public class RandomClass {
+public class Class_Random {
     public static void main(String[] args) {
         Random random = new Random();
 
