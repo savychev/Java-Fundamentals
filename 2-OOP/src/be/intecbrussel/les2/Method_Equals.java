@@ -1,6 +1,6 @@
 package be.intecbrussel.les2;
 
-public class EqualsMethode {
+public class Method_Equals {
     public static void main(String[] args) {
         String s1 = "intec";
         String s2 = "intec";

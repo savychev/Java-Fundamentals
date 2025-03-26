@@ -1,7 +1,7 @@
-package be.intecbrussel.les1;
+package be.intecbrussel.les1.Oefening1;
 
 // nog een manier om Oefening3 op te lossen
-class Oefening3_1 {
+class Oefening1_3_1 {
     public static void main(String[] args) {
         String str = "hello world";
         String result = "";

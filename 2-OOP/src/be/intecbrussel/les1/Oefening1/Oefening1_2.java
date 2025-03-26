@@ -1,7 +1,7 @@
-package be.intecbrussel.les1;
+package be.intecbrussel.les1.Oefening1;
 
 // Maak een string met volgende waarde "walter, edwin, mike" controleer of de naam edwin voorkomt in de string.
-public class Oefening2 {
+public class Oefening1_2 {
     public static void main(String[] args) {
         String str = "walter, edwin, mike";
         String subStr = "edwin";

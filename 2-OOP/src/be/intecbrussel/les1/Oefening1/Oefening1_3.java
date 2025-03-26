@@ -1,7 +1,7 @@
-package be.intecbrussel.les1;
+package be.intecbrussel.les1.Oefening1;
 
 // Maak een string met de volgende waarde "hello world" maak nu een algoritme dat van de huidige waarde het volgende maakt "HeLlO WoRlD".
-public class Oefening3 {
+public class Oefening1_3 {
     public static void main(String[] args) {
         String str = "hello world";
         char symbol;
