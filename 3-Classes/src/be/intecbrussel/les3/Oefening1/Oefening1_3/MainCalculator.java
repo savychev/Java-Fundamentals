@@ -1,7 +1,5 @@
 package be.intecbrussel.les3.Oefening1.Oefening1_3;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class MainCalculator {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
