@@ -7,30 +7,18 @@ package be.intecbrussel.les3.Oefening1.Oefening1_2;
 //Voorbeeld data: (8642)->true (123)->false (200)->true.
 
 public class EvenOdd {
-    boolean result;
 
     public EvenOdd() {
     }
 
-//    public boolean isNumEven(int num) {
-//        result = num % 2 == 0;
-//
-//        return result;
-//    }
-
     public boolean areAllNumsEven(int num) {
         while (num > 0) {
             int digit = num % 10;
-            System.out.println("num: " + num);
-            System.out.println("digit: " + digit);
             if (digit % 2 != 0) {
-                result = false;
-                break;
+                return false;
             }
             num /= 10;
-
-            result = true;
         }
-        return result;
+        return true;
     }
 }
