@@ -4,6 +4,6 @@ public class MainEvenOdd {
     public static void main(String[] args) {
         EvenOdd evenOdd = new EvenOdd();
 
-        System.out.println(evenOdd.isNumEven(7));
+        System.out.println(evenOdd.areAllNumsEven(222));
     }
 }
