@@ -6,7 +6,7 @@ package be.intecbrussel.les3.Oefening1.Oefening1_2;
 //
 //Voorbeeld data: (8642)->true (123)->false (200)->true.
 
-public class EvenOdd {
+public class  EvenOdd {
 
     public EvenOdd() {
     }
