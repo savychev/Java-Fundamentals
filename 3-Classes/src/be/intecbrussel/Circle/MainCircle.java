@@ -1,6 +1,6 @@
 package be.intecbrussel.Circle;
 
-// Ik ben bog bezig met deze opdracht
+// Ik ben nog bezig met deze opdracht
 
 public class MainCircle {
     public static void main(String[] args) {

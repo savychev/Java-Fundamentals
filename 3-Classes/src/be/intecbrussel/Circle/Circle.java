@@ -1,6 +1,6 @@
 package be.intecbrussel.Circle;
 
-// Ik ben bog bezig met deze opdracht
+// Ik ben nog bezig met deze opdracht
 
 public class Circle {
     public static final int ANGLES = 0;
