@@ -1,4 +1,4 @@
-package be.intecbrussel.les3.Oefening1.Oefening1_2;
+package be.intecbrussel.Oefening1.Oefening1_2;
 
 public class MainEvenOdd {
     public static void main(String[] args) {

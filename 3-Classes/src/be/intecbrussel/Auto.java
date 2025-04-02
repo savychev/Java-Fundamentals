@@ -1,4 +1,4 @@
-package be.intecbrussel.les3;
+package be.intecbrussel;
 
 public class Auto {
     private String mark;

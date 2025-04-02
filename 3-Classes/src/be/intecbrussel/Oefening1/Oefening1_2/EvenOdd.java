@@ -1,4 +1,4 @@
-package be.intecbrussel.les3.Oefening1.Oefening1_2;
+package be.intecbrussel.Oefening1.Oefening1_2;
 
 //Schrijf een methode om te controleren of elk cijfer van een bepaald geheel getal even is. Is het getal even, retourneer dan true als elk cijfer oneven is retourneer false.
 //

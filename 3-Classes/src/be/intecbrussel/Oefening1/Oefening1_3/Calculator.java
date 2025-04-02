@@ -1,11 +1,8 @@
-package be.intecbrussel.les3.Oefening1.Oefening1_3;
+package be.intecbrussel.Oefening1.Oefening1_3;
 
 
 public class Calculator {
     double result;
-
-    public Calculator() {
-    }
 
     public double addition(double num1, double num2) {
         result = num1 + num2;

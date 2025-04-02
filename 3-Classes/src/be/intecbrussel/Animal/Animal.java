@@ -1,4 +1,4 @@
-package be.intecbrussel.les3.Animal;
+package be.intecbrussel.Animal;
 
 public class Animal {
     String name;
@@ -27,26 +27,28 @@ public class Animal {
     public void setAge(int age) {
         if (age >= 0 && age <= 100)
             this.age = age;
-        else
+        else {
             System.out.println("Invalid input. Please enter a valid age (0-100)");
+            this.age = age;
+        }
     }
 
     public void eating() {
         int age = getAge();
         if (age < 1)
-            System.out.println(getName()+" isn't allowed to eat - it's younger than 1 year");
+            System.out.println(getName() + " isn't allowed to eat - it's younger than 1 year");
         else
-            System.out.println(getName()+" is eating.");
+            System.out.println(getName() + " is eating.");
     }
 
     public void eating(String food) {
         if (age < 1)
-            System.out.println(getName()+" isn't allowed to eat "+food+" - it's younger than 1 year");
+            System.out.println(getName() + " isn't allowed to eat " + food + " - it's younger than 1 year");
         else
-            System.out.println(getName()+" ate "+food+".");
+            System.out.println(getName() + " ate " + food + ".");
     }
 
     public String toString() {
-        return "Name: "+getName()+" | Age: "+getAge();
+        return "Name: " + getName() + " | Age: " + getAge();
     }
 }

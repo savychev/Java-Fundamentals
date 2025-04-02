@@ -1,4 +1,4 @@
-package be.intecbrussel.les3;
+package be.intecbrussel;
 
 public class MainApp {
     public static void main(String[] args) {
