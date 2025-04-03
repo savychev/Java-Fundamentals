@@ -1,15 +1,15 @@
 package be.intecbrussel;
 
-public class Rectangle {
+public class OefeningRectangle {
     int length;
     int width;
     int area;
     int perimeter;
 
-    public Rectangle() {
+    public OefeningRectangle() {
     }
 
-    public Rectangle(int length, int width) {
+    public OefeningRectangle(int length, int width) {
         this.length = length;
         this.width = width;
     }

@@ -2,7 +2,7 @@ package be.intecbrussel;
 
 public class MainRectangle {
     public static void main(String[] args) {
-        Rectangle rectangle = new Rectangle(2, 5); // constructor call
+        OefeningRectangle rectangle = new OefeningRectangle(2, 5); // constructor call
 
         System.out.println(rectangle.getArea()); // 10
 

@@ -26,15 +26,23 @@ public class MainCircle {
         System.out.println("\n");
 
         int resultRadius = circle1.getRadius();
-        System.out.println(resultRadius); // 0
+        System.out.println(resultRadius); // 0 ???????????????
         circle1.setRadius(10);
         resultRadius = circle1.getRadius();
-        System.out.println(resultRadius);
+        System.out.println(resultRadius); // 10
 
         System.out.println("\n");
 
         double resultArea = circle1.getArea();
-        System.out.println(resultArea);
+        System.out.println(resultArea); // AREA
+        double resultPerimeter = circle1.getPerimeter();
+        System.out.println(resultPerimeter); // PERIMETER
+
+        circle1.grow(3);
+        resultRadius = circle1.getRadius();
+        System.out.println(resultRadius); // 13
+
+        System.out.println(Circle.getCount()); // 4
 
     }
 }
