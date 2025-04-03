@@ -18,13 +18,17 @@ public class Rectangle {
     }
 
     public Rectangle(int height, int width, int xPos, int yPos) {
-        this.height = height;
-        this.width = width;
-        this.xPos = xPos;
-        this.yPos = yPos;
+        setHeight(height);
+        setWidth(width);
+        setXPos(xPos);
+        setYPos(yPos);
     }
 
     public Rectangle(Rectangle obj) {
+        setHeight(obj.height);
+        setWidth(obj.width);
+        setXPos(obj.xPos);
+        setYPos(obj.yPos);
     }
 
     public int getHeight() {
