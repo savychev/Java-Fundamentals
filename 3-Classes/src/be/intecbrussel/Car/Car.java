@@ -3,6 +3,8 @@ package be.intecbrussel.Car;
 import java.util.Random;
 
 public class Car {
+    private static int numberCars;
+
     private String color;
     private int speed;
     private int power;
@@ -83,10 +85,10 @@ public class Car {
 
     public void repair() {
         Random random = new Random();
-        int min = 299;
+        int min = 100;
         int max = 300;
         int randomNumber = random.nextInt(min, max);
-        System.out.println("Repair costs "+randomNumber+" euros.");
+        System.out.println("Repair costs " + randomNumber + " euros.");
     }
 
     @Override
