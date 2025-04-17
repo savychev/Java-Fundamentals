@@ -2,7 +2,7 @@ package be.intecbrussel.oefening3;
 
 import java.util.Arrays;
 
-public class oefening2 {
+public class Oefening2 {
     public static void main(String[] args) {
         String[] firstArray = {"Intec", "is", "the", "best!"};
         String[] secondArray = {"C#", "is", "the", "worst!"};
