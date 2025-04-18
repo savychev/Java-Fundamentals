@@ -5,14 +5,13 @@ public class Oefening3 {
         int[] numbers = {20, 30, 25, 35, -16, 60, -100};
 
         int i = 0;
-        double sum = 0;
+        int sum = 0;
         while (i < numbers.length) {
             sum += numbers[i];
             i++;
         }
 
-        double average = sum / numbers.length; // 7.714285714285714
-        average = Math.floor(average);
+        double average = sum / numbers.length; // 7.0 (want sum en length zijn integers)
 
         System.out.println(average); // 7.0
     }

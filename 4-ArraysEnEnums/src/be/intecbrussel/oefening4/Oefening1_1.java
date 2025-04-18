@@ -12,15 +12,13 @@ public class Oefening1_1 {
         };
 
         Arrays.sort(arrDouble);
-
         System.out.println(Arrays.toString(arrDouble));
-
         for (int i = arrDouble.length - 1; i >= 0; i--) {
             System.out.print(arrDouble[i] + ", ");
         }
 
-        System.out.println("\n");
 
+        System.out.println("\n");
 
 
         String[] arrStr = {
@@ -29,12 +27,9 @@ public class Oefening1_1 {
                 "zon", "maan", "ster", "water", "vuur"
         };
 
+        Arrays.sort(arrStr);
         System.out.println(Arrays.toString(arrStr));
-
-        for (int i = arrStr.length - 1; i >= 0; i--) {
-            System.out.print(arrStr[i] + ", ");
-        }
-
-//        System.out.println(Arrays.toString(arrStr));
+        Arrays.sort(arrStr, Collections.reverseOrder());
+        System.out.println(Arrays.toString(arrStr));
     }
 }

@@ -17,11 +17,14 @@ public class Oefening1 {
                 "zon", "maan", "ster", "water", "vuur"
         };
 
-        Arrays.sort(arrDouble, Collections.reverseOrder());
-        Arrays.sort(arrStr, Collections.reverseOrder());
-
-
+        Arrays.sort(arrDouble);
         System.out.println(Arrays.toString(arrDouble));
+        Arrays.sort(arrDouble, Collections.reverseOrder());
+        System.out.println(Arrays.toString(arrDouble));
+
+        Arrays.sort(arrStr);
+        System.out.println(Arrays.toString(arrStr));
+        Arrays.sort(arrStr, Collections.reverseOrder());
         System.out.println(Arrays.toString(arrStr));
     }
 }
