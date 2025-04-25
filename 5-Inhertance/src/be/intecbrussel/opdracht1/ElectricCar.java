@@ -3,7 +3,20 @@ package be.intecbrussel.opdracht1;
 public class ElectricCar extends Car {
     private int battery;
 
+    public int getBattery() {
+        return battery;
+    }
+
+    public void setBattery(int battery) {
+        this.battery = battery;
+    }
+
     public void accelerate(int amount) {
+        int battery = getBattery();
+        int speed = getSpeed();
+        int newSpeed = speed + (amount + (battery / 100));
+
+        setSpeed(newSpeed);
     }
 
     public void slow(int amount) {
@@ -12,10 +25,13 @@ public class ElectricCar extends Car {
     public void park() {
     }
 
-    public void charge(int amount){}
+    public void charge(int amount) {
+    }
 
     @Override
     public String toString() {
-        return "ElectricCar{}";
+        return super.toString() + ", ElectricCar{" +
+                "battery=" + battery +
+                '}';
     }
 }

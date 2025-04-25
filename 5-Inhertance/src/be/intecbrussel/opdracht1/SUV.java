@@ -17,6 +17,14 @@ public class SUV extends Car {
 
     @Override
     public void accelerate(int amount) {
+        int hp = getHp();
+        int speed = getSpeed();
+        int newSpeed = speed + (amount + (hp / 100));
+
+        if (isAWDOn)
+            newSpeed = Math.min(newSpeed, 30);
+
+        setSpeed(newSpeed);
     }
 
     @Override

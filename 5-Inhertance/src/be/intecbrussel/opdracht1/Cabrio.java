@@ -7,11 +7,18 @@ public class Cabrio extends Car {
         return sunroof;
     }
 
+    public void setSunroof(boolean sunroof) {
+        this.sunroof = sunroof;
+    }
+
     public void openRoof() {
+        setSunroof(!getSunroof());
     }
 
     @Override
     public String toString() {
-        return "Cabrio{}";
+        return super.toString() +", Cabrio{" +
+                "sunroof=" + sunroof +
+                '}';
     }
 }

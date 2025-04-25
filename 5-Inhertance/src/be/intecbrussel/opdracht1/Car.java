@@ -31,14 +31,20 @@ public class Car {
 
     public void accelerate(int amount) {
         int hp = getHp();
+        int speed = getSpeed();
+        int newSpeed = speed + (amount + (hp / 100));
 
-        setSpeed(amount + (hp / 100));
+//        System.out.println("amount = " + amount + "; speed = " + speed+ "; newSpeed = " + newSpeed);
+
+        setSpeed(newSpeed);
     }
 
     public void slow(int amount) {
         int hp = getHp();
+        int speed = getSpeed();
+        int newSpeed = speed - (amount + (hp / 100));
 
-        setSpeed(amount - (hp / 100));
+        setSpeed(newSpeed);
     }
 
     public void park() {
