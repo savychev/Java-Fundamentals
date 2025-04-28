@@ -1,4 +1,4 @@
-package be.intecbrussel.les1.OpdrachtWolf;
+package be.intecbrussel.OpdrachtWolf;
 
 public class WildDog extends Dog {
     private char size = 'L';
