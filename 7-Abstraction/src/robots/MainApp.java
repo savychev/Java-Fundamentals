@@ -5,7 +5,18 @@ public class MainApp {
         BendingRobot br = new BendingRobot("Bender", 90);
         br.bend(45);
         br.bend(180);
-        br.lift(80);
-        br.lift(150);
+        System.out.println(br);
+
+        System.out.println("");
+
+        LiftingRobot lr = new LiftingRobot("Lifter", 100);
+        lr.lift(50);
+        lr.lift(150);
+        System.out.println(lr);
+
+        System.out.println("");
+
+        CrazyRobot cr = new CrazyRobot("GEK");
+        System.out.println(cr);
     }
 }
