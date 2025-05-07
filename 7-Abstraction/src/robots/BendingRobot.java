@@ -3,10 +3,6 @@ package robots;
 public class BendingRobot extends Robot {
     private double maxBendAngle;
 
-    public BendingRobot(double maxBendAngle) {
-        this.maxBendAngle = maxBendAngle;
-    }
-
     public BendingRobot(String unitName, double maxBendAngle) {
         super(unitName);
         this.maxBendAngle = maxBendAngle;
