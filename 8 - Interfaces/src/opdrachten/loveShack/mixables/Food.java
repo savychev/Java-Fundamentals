@@ -1,6 +1,6 @@
-package opdrachten.loveShack;
+package opdrachten.loveShack.mixables;
 
-public abstract class Food implements Mixable{
+public abstract class Food implements Mixable {
     private double pricePerPiece;
 
     public Food(double pricePerPiece) {

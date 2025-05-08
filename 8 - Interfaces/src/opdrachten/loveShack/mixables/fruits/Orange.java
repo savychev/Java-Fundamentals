@@ -1,4 +1,4 @@
-package opdrachten.loveShack;
+package opdrachten.loveShack.mixables.fruits;
 
 public class Orange extends Fruit {
     public Orange(double pricePerPiece) {
@@ -7,6 +7,6 @@ public class Orange extends Fruit {
 
     @Override
     public void mix() {
-
+        System.out.println("Orange is pressed and added");
     }
 }
