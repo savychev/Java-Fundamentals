@@ -18,13 +18,16 @@ public enum SmoothieRecipe {
     }
 
     public double getTotalPrice() {
+        Food[] recipe = getRecipe();
+
+        for (Food ingredient :  recipe){
+            System.out.println(ingredient);
+        }
+
         return totalPrice;
     }
 
     public Food[] getRecipe() {
-        for (Food ingredient :  recipe){
-            System.out.println(ingredient);
-        }
         return recipe;
     }
 
