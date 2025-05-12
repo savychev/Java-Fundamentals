@@ -1,0 +1,17 @@
+@startuml
+
+start
+
+:guest asks bill;
+
+if (cash or card?) then (cash)
+  :receive cash;
+  :return change;
+else (card)
+  :proces transaction;
+endif
+
+:give receipt;
+stop
+
+@enduml

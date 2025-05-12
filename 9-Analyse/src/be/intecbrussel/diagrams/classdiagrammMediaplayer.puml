@@ -1,0 +1,47 @@
+@startuml
+title Adapter Pattern - Media Player
+
+interface MediaPlayer {
+    +play(audioType: String, fileName: String)
+}
+
+interface AdvancedMediaPlayer {
+    +playVlc(fileName: String)
+    +playMp4(fileName: String)
+}
+
+class AudioPlayer {
+    -mediaAdapter: MediaAdapter
+    +play(audioType: String, fileName: String)
+}
+
+class MediaAdapter {
+    -advancedMusicPlayer: AdvancedMediaPlayer
+    +MediaAdapter(audioType: String)
+    +play(audioType: String, fileName: String)
+}
+
+class VlcPlayer {
+    +playVlc(fileName: String)
+    +playMp4(fileName: String)
+}
+
+class Mp4Player {
+    +playVlc(fileName: String)
+    +playMp4(fileName: String)
+}
+
+class AdapterPatternDemo {
+    +main(args: String[])
+}
+
+MediaPlayer <|.. AudioPlayer
+MediaPlayer <|.. MediaAdapter
+AdvancedMediaPlayer <|.. VlcPlayer
+AdvancedMediaPlayer <|.. Mp4Player
+
+'AudioPlayer --> MediaAdapter
+'MediaAdapter --> AdvancedMediaPlayer
+'AdapterPatternDemo --> AudioPlayer
+
+@enduml

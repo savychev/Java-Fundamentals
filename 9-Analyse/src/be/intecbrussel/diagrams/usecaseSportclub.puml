@@ -1,0 +1,46 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+left to right direction
+actor Leden
+actor Instructeurs
+actor Manager
+actor Receptie
+
+usecase "Sportfaciliteiten" as SF
+usecase "Zwembad" as Zw
+usecase "Gymzaal" as Gym
+usecase "Tennisbanen" as Ten
+usecase "coach sportieve" as Coach
+usecase "Abonnement" as Ab
+usecase "Betaling" as Bet
+usecase "Contant" as Cont
+usecase "creditkaart" as Credit
+
+usecase "Beschikbaarheid van lessen en uren" as Beschik
+
+usecase "Controle algemene werking" as Controle
+usecase "List Item\nPlanning van de lessen,\nevenementen" as Planning
+usecase "Abonnement van de leden controleren" as CheckAb
+
+Leden --> SF
+SF --> Zw
+SF --> Gym
+SF --> Ten
+SF .> Coach : <<extend>>
+
+Leden --> Ab
+Ab .> SF : <<include>>
+
+Leden --> Bet
+Bet --> Cont
+Bet --> Credit
+
+Receptie --> Ab
+Receptie --> CheckAb
+
+Instructeurs --> Beschik
+
+Manager --> Controle
+Manager --> Planning
+
+@enduml

@@ -3,5 +3,5 @@ package opdrachten.whyPhone;
 public interface ICamera {
     void shootAPhoto(double amountOfPhotos);
 
-    String[] viewPhoto();
+    String[] viewPhotos();
 }

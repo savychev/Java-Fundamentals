@@ -1,0 +1,37 @@
+@startuml
+actor User
+participant AdapterPatternDemo as Demo
+participant AudioPlayer       as AP
+participant MediaAdapter      as MA
+participant Mp4Player         as MP4
+
+== Opstarten Main ==
+User -> Demo : main()
+activate Demo
+
+== Play mp4 via Adapter ==
+Demo -> AP : play("mp4", "alone.mp4")
+activate AP
+
+AP -> MA : new MediaAdapter("mp4")
+activate MA
+
+MA -> MP4 : new Mp4Player()
+activate MP4
+MP4 --> MA : (instance)
+deactivate MP4
+
+MA -> MP4 : playMp4("alone.mp4")
+activate MP4
+MP4 --> MA : void
+deactivate MP4
+
+MA --> AP : void
+deactivate MA
+
+AP --> Demo : void
+deactivate AP
+
+Demo --> User : (programma klaar)
+deactivate Demo
+@enduml
