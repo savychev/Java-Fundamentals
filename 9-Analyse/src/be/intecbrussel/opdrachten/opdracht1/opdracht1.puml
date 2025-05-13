@@ -1,0 +1,44 @@
+@startuml
+actor User
+participant "Registratie-\nService" as RegService
+participant "Gebruikers-\nDatabase" as DB
+participant "E-mail-\nService" as Mail
+
+== Normaal registratiepad ==
+User -> RegService : openRegistratiepagina()
+RegService -> User : toonRegistratieFormulier()
+
+User -> RegService : verstuurGegevens(\n• gebruikersnaam\n• wachtwoord\n• e-mail\n• naam, etc.)
+activate RegService
+
+RegService -> DB : controleerBestaat(gebruikersnaam)
+activate DB
+DB --> RegService : bestaat? false
+deactivate DB
+
+RegService -> DB : slaAccountOp(gegevens)
+activate DB
+DB --> RegService : opslaanSuccess
+deactivate DB
+
+RegService -> Mail : stuurBevestigingMail( e-mail )
+activate Mail
+Mail --> RegService : mailVerzonden
+deactivate Mail
+
+RegService --> User : registratieBevestiging()
+
+deactivate RegService
+
+== Foutpad: gebruikersnaam bestaat al ==
+User -> RegService : verstuurGegevens(…)
+activate RegService
+
+RegService -> DB : controleerBestaat(gebruikersnaam)
+activate DB
+DB --> RegService : bestaat? true
+deactivate DB
+
+RegService --> User : foutmelding("Gebruikersnaam al in gebruik")
+deactivate RegService
+@enduml
