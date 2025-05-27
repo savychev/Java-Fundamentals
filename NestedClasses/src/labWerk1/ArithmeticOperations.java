@@ -6,6 +6,4 @@ public interface ArithmeticOperations {
     int sum();
     int product();
     double division();
-
-    void displayAllOperations(ArithmeticOperations ops, String title);
 }
